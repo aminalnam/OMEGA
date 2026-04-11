@@ -1,8 +1,8 @@
 # Oceanic Geospatial Measurement System
 
-A portable underwater mapping system that records depth, position, and environmental data from a small ROV platform and transforms those measurements into bathymetric maps, contour images, and geographic overlays.
+A compact underwater survey system that collects depth, position, and environmental data from a moving ROV and converts those measurements into bathymetric maps.
 
-This project combines embedded sensing, geospatial filtering, and visualization to convert raw underwater measurements into structured spatial data and derived maps.
+Measurements are filtered in real time based on quality and spatial constraints, producing both a complete log and a reduced mapping dataset. A continuous surface is generated from the filtered points using spatial interpolation, allowing irregular samples to be resolved into structured terrain models and georeferenced outputs.
 
 ---
 
@@ -12,10 +12,10 @@ The system is built around an **Arduino-based capture device** and a **Python-ba
 
 It is designed to:
 
-* record reliable field data in real time
-* filter out low-quality measurements
-* generate usable spatial maps from irregular samples
-* visualize results as raster maps and georeferenced overlays
+- record reliable field data in real time  
+- filter out low-quality measurements  
+- generate usable spatial maps from irregular samples  
+- visualize results as raster maps and georeferenced overlays  
 
 ---
 
@@ -35,7 +35,7 @@ scripts/
 
 example_data/
   MAP00.CSV
-```
+````
 
 ---
 
@@ -105,25 +105,25 @@ flowchart LR
 
 The Arduino logger writes two files:
 
-* **`dataXX.csv`** — full system log (diagnostics)
-* **`mapXX.csv`** — filtered survey points
+* **`dataXX.csv`** — complete system log (diagnostics)
+* **`mapXX.csv`** — filtered survey dataset
 
-Mapping points are only recorded when the system detects:
+Mapping points are recorded only when the system detects:
 
 * valid GPS fix
 * acceptable HDOP
-* sufficient satellites
+* sufficient satellite count
 * recent fix age
 * valid depth reading
 * stable orientation (pitch/roll)
-* reasonable speed
-* minimum spacing from previous point
+* acceptable platform speed
+* minimum spacing from the previous point
 
 ---
 
 ### 2. Processing
 
-Run scripts on the mapping file:
+Run scripts on the mapping dataset:
 
 ```bash
 python depth_map.py MAP00.CSV
@@ -136,10 +136,10 @@ python google_earth_overlay.py MAP00.CSV
 
 ### 3. Outputs
 
-* **Scatter map** — quick validation
-* **Interpolated map** — continuous surface
+* **Scatter map** — validation of raw coverage
+* **Interpolated map** — continuous surface model
 * **Contour map** — readable bathymetry
-* **KML + overlay** — geographic visualization
+* **KML + overlay** — georeferenced visualization
 
 ---
 
@@ -151,15 +151,15 @@ All timestamps are recorded in UTC to eliminate timezone ambiguity.
 
 ### Depth Smoothing
 
-A moving average filter reduces sonar noise and rejects spikes.
+A moving average filter reduces sonar noise and rejects transient spikes.
 
 ### Sound Speed Correction
 
 Depth is adjusted using a temperature-based estimate of sound speed.
 
-### Intelligent Mapping Filter
+### Real-Time Data Filtering
 
-Only high-quality data is written to the mapping file.
+Measurements are evaluated during acquisition to ensure mapping data meets defined quality thresholds.
 
 ### Spatial Interpolation
 
@@ -202,7 +202,7 @@ Running the scripts produces:
 
 ---
 
-## Conceptual Framing
+## System Description
 
 This project implements a self-contained bathymetric survey system using a mobile ROV platform.
 
@@ -256,3 +256,7 @@ Run:
 ```bash
 python depth_map.py example_data/MAP00.CSV
 ```
+
+## Documentation
+
+[System Documentation](docs/SYSTEM.md)
