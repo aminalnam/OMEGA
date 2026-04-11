@@ -1,96 +1,258 @@
-## Oceanic Geospatial Measurement System
+# Oceanic Geospatial Measurement System
 
-A portable underwater mapping system that records depth, position, and environmental data to generate bathymetric maps from a small ROV platform. This project combines embedded sensing, spatial filtering, and data visualization to transform raw measurements into readable maps and geographic overlays.
+A portable underwater mapping system that records depth, position, and environmental data from a small ROV platform and transforms those measurements into bathymetric maps, contour images, and geographic overlays.
 
----
-
-### ## Overview
-This system captures underwater depth data using an **Arduino-based logger** and converts it into visual maps using **Python-based processing tools**.
-
-**It is designed to:**
-* Log reliable field data in real time.
-* Filter out low-quality measurements.
-* Generate usable spatial maps from irregular samples.
-* Visualize results in both image form and geographic context.
+This project combines embedded sensing, geospatial filtering, and visualization to convert raw underwater measurements into structured spatial data and derived maps.
 
 ---
 
-### ## System Architecture
+## Overview
 
-| Layer | Components / Functions |
-| :--- | :--- |
-| **Capture Layer (Arduino)** | GPS (Position/UTC), Ultrasonic Sonar (Depth), DS18B20 (Temp), BNO085 IMU (Orientation), SD Card (Logging) |
-| **Processing Layer (Python)** | CSV parsing, Spatial Interpolation (IDW), Contour generation, KML + Image overlays |
-| **Output Layer** | Raw logs, Filtered mapping data, Depth maps (PNG), Contour maps, Google Earth overlays (KML) |
+The system is built around an **Arduino-based capture device** and a **Python-based processing workflow**.
 
----
+It is designed to:
 
-### ## Hardware & Wiring
-
-#### **Hardware Components**
-* **Controller:** Arduino Mega
-* **Positioning:** GPS module (UART)
-* **Sensing:** Underwater ultrasonic distance sensor, DS18B20 temperature sensor, BNO085 IMU
-* **Interface:** I2C 16x2 LCD, SD card module
-
-#### **Wiring Summary**
-| Component | Connection |
-| :--- | :--- |
-| **GPS** | RX1 (19), TX1 (18) |
-| **Ultrasonic** | RX2 (17), TX2 (16) |
-| **SD Card** | CS Pin 53 |
-| **Temp Sensor** | Pin 6 |
-| **LCD / IMU** | SDA (20), SCL (21) |
+* record reliable field data in real time
+* filter out low-quality measurements
+* generate usable spatial maps from irregular samples
+* visualize results as raster maps and georeferenced overlays
 
 ---
 
-### ## Data Pipeline
+## Repository Structure
 
-#### **1. Data Capture**
-The Arduino logger produces two distinct files:
-* **`dataXX.csv`**: Full system log for diagnostics.
-* **`mapXX.csv`**: Filtered survey points only, ensuring a valid GPS fix, acceptable HDOP, stable orientation (pitch/roll), and proper spatial spacing.
+```text
+arduino/
+  rov_logger_mapping.ino
 
-#### **2. Processing**
-Run scripts on the mapping file to generate visuals:
+scripts/
+  csv_to_kml.py
+  csv_to_kml_colored.py
+  depth_map.py
+  interpolated_map.py
+  contour_map.py
+  google_earth_overlay.py
+
+example_data/
+  MAP00.CSV
+```
+
+---
+
+## System Architecture
+
+```mermaid
+flowchart LR
+    A[GPS Module] --> G[Arduino Logger]
+    B[Ultrasonic Depth Sensor] --> G
+    C[DS18B20 Temperature] --> G
+    D[BNO085 IMU] --> G
+    E[SD Card] <-->|logs| G
+    F[LCD] <-->|status| G
+
+    G --> H[dataXX.csv]
+    G --> I[mapXX.csv]
+
+    I --> J[Python Scripts]
+    J --> K[Depth Map]
+    J --> L[Interpolated Surface]
+    J --> M[Contour Map]
+    J --> N[KML Output]
+    J --> O[Earth Overlay]
+```
+
+---
+
+## System Architecture (Conceptual Layers)
+
+| Layer                   | Function                                                                    |
+| ----------------------- | --------------------------------------------------------------------------- |
+| **Capture (Arduino)**   | GPS (position + UTC), sonar depth, temperature, IMU orientation, SD logging |
+| **Processing (Python)** | CSV parsing, filtering, interpolation (IDW), contour generation             |
+| **Output**              | Depth maps, contour maps, KML files, Google Earth overlays                  |
+
+---
+
+## Hardware
+
+### Components
+
+* Arduino Mega
+* GPS module (UART)
+* Waterproof ultrasonic distance sensor
+* DS18B20 temperature sensor
+* BNO085 IMU
+* I2C 16×2 LCD
+* SD card module
+
+---
+
+### Wiring Summary
+
+| Component          | Connection         |
+| ------------------ | ------------------ |
+| GPS                | RX1 (19), TX1 (18) |
+| Ultrasonic         | RX2 (17), TX2 (16) |
+| SD Card            | CS pin 53          |
+| Temperature Sensor | Pin 6              |
+| LCD / IMU          | SDA (20), SCL (21) |
+
+---
+
+## Data Pipeline
+
+### 1. Data Capture
+
+The Arduino logger writes two files:
+
+* **`dataXX.csv`** — full system log (diagnostics)
+* **`mapXX.csv`** — filtered survey points
+
+Mapping points are only recorded when the system detects:
+
+* valid GPS fix
+* acceptable HDOP
+* sufficient satellites
+* recent fix age
+* valid depth reading
+* stable orientation (pitch/roll)
+* reasonable speed
+* minimum spacing from previous point
+
+---
+
+### 2. Processing
+
+Run scripts on the mapping file:
+
 ```bash
-python contour_map.py MAP00.CSV
+python depth_map.py MAP00.CSV
 python interpolated_map.py MAP00.CSV
+python contour_map.py MAP00.CSV
 python google_earth_overlay.py MAP00.CSV
 ```
 
-#### **3. Outputs**
-* **Scatter map:** Quick validation.
-* **Interpolated map:** Continuous surface.
-* **Contour map:** Readable bathymetry.
-* **KML overlay:** Geographic visualization.
+---
+
+### 3. Outputs
+
+* **Scatter map** — quick validation
+* **Interpolated map** — continuous surface
+* **Contour map** — readable bathymetry
+* **KML + overlay** — geographic visualization
 
 ---
 
-### ## Key Features
-* **UTC Time Logging:** Avoids timezone inconsistencies.
-* **Depth Smoothing:** Moving average filter reduces noise in sonar readings.
-* **Sound Speed Correction:** Depth is adjusted using temperature-based sound speed estimation.
-* **Intelligent Mapping Filter:** Only high-quality data points are recorded.
-* **Spatial Interpolation:** Inverse Distance Weighting (IDW) converts discrete samples into continuous surfaces.
+## Key Features
+
+### UTC Time Logging
+
+All timestamps are recorded in UTC to eliminate timezone ambiguity.
+
+### Depth Smoothing
+
+A moving average filter reduces sonar noise and rejects spikes.
+
+### Sound Speed Correction
+
+Depth is adjusted using a temperature-based estimate of sound speed.
+
+### Intelligent Mapping Filter
+
+Only high-quality data is written to the mapping file.
+
+### Spatial Interpolation
+
+Inverse Distance Weighting (IDW) converts discrete samples into continuous surfaces.
 
 ---
 
-### ## Data Format
-**Mapping File (`mapXX.csv`) Structure:**
-`point, date_utc, time_utc, lat, lng, depth_cm, temp_c, satellites, hdop, speed_kmph, fix_age_ms, pitch_deg, roll_deg, imu_acc`
+## Data Format
+
+### Mapping File (`mapXX.csv`)
+
+```csv
+point,date_utc,time_utc,lat,lng,depth_cm,temp_c,satellites,hdop,speed_kmph,fix_age_ms,pitch_deg,roll_deg,imu_acc
+```
 
 ---
 
-### ## Limitations & Future Improvements
+## Example Workflow
 
-**Limitations**
-* Ultrasonic sensors have limited range and beam spread.
-* No salinity correction (temperature-only model).
-* GPS accuracy limits spatial resolution.
+```bash
+python depth_map.py example_data/MAP00.CSV
+python interpolated_map.py example_data/MAP00.CSV
+python contour_map.py example_data/MAP00.CSV
+python csv_to_kml_colored.py example_data/MAP00.CSV
+python google_earth_overlay.py example_data/MAP00.CSV
+```
 
-**Future Improvements**
-* Pressure-based depth sensor integration.
-* Salinity-aware sound speed correction.
-* Real-time map generation and autonomous survey path planning.
+---
 
+## Example Output
+
+Running the scripts produces:
+
+* `*_depth_map.png`
+* `*_interpolated.png`
+* `*_contours.png`
+* `*_colored.kml`
+* `*_overlay.kml`
+* `*_overlay.png`
+
+---
+
+## Conceptual Framing
+
+This project implements a self-contained bathymetric survey system using a mobile ROV platform.
+
+As the device moves, it continuously samples depth, position, and environmental data. Each measurement is evaluated in real time against defined quality constraints, including GPS validity, HDOP, satellite count, fix age, platform orientation, and spatial separation.
+
+The system produces two datasets:
+
+* a complete log (`dataXX.csv`) containing all measurements
+* a filtered mapping dataset (`mapXX.csv`) containing only survey-quality points
+
+The mapping dataset is generated by enforcing minimum spacing between points and rejecting measurements that do not meet stability or accuracy thresholds.
+
+A continuous surface is constructed from the filtered dataset using spatial interpolation (Inverse Distance Weighting). The resulting map is a derived model, determined by sampling density, platform motion, and filtering criteria rather than direct sensor output.
+
+This architecture separates acquisition, validation, and surface reconstruction into distinct stages, allowing control over data quality during both capture and processing.
+
+---
+
+## Limitations
+
+* Ultrasonic sensors have beam spread and limited range underwater
+* GPS accuracy limits spatial resolution
+* Sound speed correction uses temperature only
+* Interpolation produces a modeled surface, not direct observation
+* Map quality depends on survey spacing, speed, and stability
+
+---
+
+## Future Improvements
+
+* pressure-based depth sensor integration
+* salinity-aware sound speed correction
+* real-time mapping preview
+* automated survey path planning
+* higher-resolution interpolation methods
+* contour labeling and hillshading
+* live telemetry and visualization
+
+---
+
+## Testing
+
+A sample file is included:
+
+```
+example_data/MAP00.CSV
+```
+
+Run:
+
+```bash
+python depth_map.py example_data/MAP00.CSV
+```
