@@ -31,6 +31,9 @@ It is designed to:
 arduino/
   rov_logger_mapping.ino
 
+docs/
+  SYSTEM.md
+
 scripts/
   csv_to_kml.py
   csv_to_kml_colored.py
