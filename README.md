@@ -1,8 +1,14 @@
+## Quick Start
+
+```bash
+python depth_map.py example_data/MAP00.CSV
+python contour_map.py example_data/MAP00.CSV
+```
+---
 # Oceanic Geospatial Measurement System
 
-A compact underwater survey system that collects depth, position, and environmental data from a moving ROV and converts those measurements into bathymetric maps.
-
-Measurements are filtered in real time based on quality and spatial constraints, producing both a complete log and a reduced mapping dataset. A continuous surface is generated from the filtered points using spatial interpolation, allowing irregular samples to be resolved into structured terrain models and georeferenced outputs.
+A compact underwater survey system that collects depth, position, and environmental data from a moving ROV and converts those measurements into bathymetric maps and georeferenced outputs.
+Measurements are filtered in real time using quality and spatial constraints, producing both a complete log and a reduced mapping dataset. A continuous surface is generated from the filtered points through spatial interpolation.
 
 ---
 
@@ -63,7 +69,7 @@ flowchart LR
 
 ---
 
-## System Architecture (Conceptual Layers)
+## Architecture Overview
 
 | Layer                   | Function                                                                    |
 | ----------------------- | --------------------------------------------------------------------------- |
@@ -177,6 +183,18 @@ point,date_utc,time_utc,lat,lng,depth_cm,temp_c,satellites,hdop,speed_kmph,fix_a
 
 ---
 
+## Outputs at a Glance
+
+- `dataXX.csv` — complete acquisition log
+- `mapXX.csv` — filtered survey dataset
+- `*_depth_map.png` — raw point coverage
+- `*_interpolated.png` — interpolated surface
+- `*_contours.png` — contour visualization
+- `*_colored.kml` — colorized Google Earth points
+- `*_overlay.kml` + `*_overlay.png` — Google Earth ground overlay
+
+---
+
 ## Example Workflow
 
 ```bash
@@ -186,7 +204,6 @@ python contour_map.py example_data/MAP00.CSV
 python csv_to_kml_colored.py example_data/MAP00.CSV
 python google_earth_overlay.py example_data/MAP00.CSV
 ```
-
 ---
 
 ## Example Output
@@ -199,10 +216,9 @@ Running the scripts produces:
 * `*_colored.kml`
 * `*_overlay.kml`
 * `*_overlay.png`
-
 ---
 
-## System Description
+## Method
 
 This project implements a self-contained bathymetric survey system using a mobile ROV platform.
 
