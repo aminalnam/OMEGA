@@ -1,3 +1,12 @@
+
+<p align="center">
+  <img src="assets/mapping-diagram.png" alt="ROV bathymetric mapping pipeline diagram" width="800">
+</p>
+
+<p align="center">
+  <em>Data pipeline from ROV movement to bathymetric surface generation.</em>
+</p>
+
 ## Quick Start
 
 ```bash
