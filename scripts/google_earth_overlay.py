@@ -86,15 +86,14 @@ def main():
 
     lons, lats, depths, xi, yi, zi, lon_min, lon_max, lat_min, lat_max = build_grid(points, args.grid_size, args.power)
 
-    # render transparent-ish overlay
+    # render overlay
     fig = plt.figure(figsize=(9, 7))
     ax = fig.add_subplot(111)
     im = ax.imshow(
         zi,
         extent=(lon_min, lon_max, lat_min, lat_max),
         origin="lower",
-        aspect="auto",
-        alpha=0.85
+        aspect="auto"
     )
     ax.set_xlabel("Longitude")
     ax.set_ylabel("Latitude")
@@ -112,6 +111,7 @@ def main():
         kml.write('<Document>\n')
         kml.write('  <GroundOverlay>\n')
         kml.write('    <name>ROV Bathymetric Overlay</name>\n')
+        kml.write('    <color>80ffffff</color>\n')
         kml.write('    <Icon>\n')
         kml.write(f'      <href>{image_name}</href>\n')
         kml.write('    </Icon>\n')
