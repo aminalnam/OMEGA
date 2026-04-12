@@ -1,8 +1,14 @@
 import csv
 import os
-from typing import List, Dict
+import argparse
+import zipfile
+import tempfile
+import shutil
+import numpy as np
+import matplotlib.pyplot as plt
 
-def load_points(csv_path: str):
+
+def load_points(csv_path):
     with open(csv_path, "r", newline="", encoding="utf-8") as f:
         rows = [line for line in f if not line.lstrip().startswith("#") and line.strip()]
 
@@ -12,10 +18,7 @@ def load_points(csv_path: str):
     for row in reader:
         try:
             lat = float(row["lat"])
-            if "lon" in row and row["lon"] not in ("", None):
-                lon = float(row["lon"])
-            else:
-                lon = float(row["lng"])
+            lon = float(row["lon"]) if "lon" in row and row["lon"] not in ("", None) else float(row["lng"])
 
             if "depth_m" in row and row["depth_m"] not in ("", None):
                 depth_m = float(row["depth_m"])
@@ -24,8 +27,7 @@ def load_points(csv_path: str):
             else:
                 continue
 
-            utc = row.get("utc", "")
-            points.append({"lat": lat, "lon": lon, "depth_m": depth_m, "utc": utc})
+            points.append({"lat": lat, "lon": lon, "depth_m": depth_m})
         except Exception:
             continue
 
@@ -34,27 +36,30 @@ def load_points(csv_path: str):
 
     return points
 
-def default_output_path(input_path: str, suffix: str, ext: str) -> str:
-    base, _ = os.path.splitext(input_path)
-    return f"{base}{suffix}{ext}"
 
-import argparse
-import numpy as np
-import matplotlib.pyplot as plt
+def default_output_prefix(input_path):
+    base, _ = os.path.splitext(input_path)
+    return f"{base}_overlay"
+
 
 def idw_interpolation(x, y, z, xi, yi, power=2.0, epsilon=1e-12):
     zi = np.zeros_like(xi, dtype=float)
+
     for row in range(xi.shape[0]):
         for col in range(xi.shape[1]):
             dx = x - xi[row, col]
             dy = y - yi[row, col]
             dist = np.sqrt(dx * dx + dy * dy)
+
             if np.any(dist < epsilon):
                 zi[row, col] = z[np.argmin(dist)]
                 continue
+
             weights = 1.0 / np.power(dist, power)
             zi[row, col] = np.sum(weights * z) / np.sum(weights)
+
     return zi
+
 
 def build_grid(points, grid_size, power):
     lats = np.array([p["lat"] for p in points], dtype=float)
@@ -69,64 +74,75 @@ def build_grid(points, grid_size, power):
     xi, yi = np.meshgrid(xi_vals, yi_vals)
     zi = idw_interpolation(lons, lats, depths, xi, yi, power=power)
 
-    return lons, lats, depths, xi, yi, zi, lon_min, lon_max, lat_min, lat_max
+    return zi, lon_min, lon_max, lat_min, lat_max
+
 
 def main():
-    parser = argparse.ArgumentParser(description="Create a Google Earth image overlay and matching KML.")
-    parser.add_argument("input_csv")
+    parser = argparse.ArgumentParser(description="Create a Google Earth KMZ overlay from an ROV mapping CSV.")
+    parser.add_argument("input_csv", help="Path to input CSV file")
+    parser.add_argument("--grid-size", type=int, default=250, help="Interpolation grid size")
+    parser.add_argument("--power", type=float, default=2.0, help="IDW power parameter")
     parser.add_argument("--output-prefix", help="Optional output prefix")
-    parser.add_argument("--grid-size", type=int, default=250)
-    parser.add_argument("--power", type=float, default=2.0)
     args = parser.parse_args()
 
     points = load_points(args.input_csv)
-    base_prefix = args.output_prefix or os.path.splitext(args.input_csv)[0]
-    image_path = f"{base_prefix}_overlay.png"
-    kml_path = f"{base_prefix}_overlay.kml"
+    prefix = args.output_prefix or default_output_prefix(args.input_csv)
 
-    lons, lats, depths, xi, yi, zi, lon_min, lon_max, lat_min, lat_max = build_grid(points, args.grid_size, args.power)
+    kmz_path = f"{prefix}.kmz"
+    image_name = "overlay.png"
+    kml_name = "doc.kml"
 
-    # render overlay
-    fig = plt.figure(figsize=(9, 7))
-    ax = fig.add_subplot(111)
-    im = ax.imshow(
-        zi,
-        extent=(lon_min, lon_max, lat_min, lat_max),
-        origin="lower",
-        aspect="auto"
-    )
-    ax.set_xlabel("Longitude")
-    ax.set_ylabel("Latitude")
-    ax.set_title("Bathymetric Overlay")
-    plt.colorbar(im, label="Depth (m)")
-    plt.tight_layout()
-    plt.savefig(image_path, dpi=300)
-    plt.close()
+    zi, lon_min, lon_max, lat_min, lat_max = build_grid(points, args.grid_size, args.power)
 
-    image_name = os.path.basename(image_path)
+    temp_dir = tempfile.mkdtemp(prefix="rov_overlay_")
+    try:
+        image_path = os.path.join(temp_dir, image_name)
+        kml_path = os.path.join(temp_dir, kml_name)
 
-    with open(kml_path, "w", encoding="utf-8") as kml:
-        kml.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        kml.write('<kml xmlns="http://www.opengis.net/kml/2.2">\n')
-        kml.write('<Document>\n')
-        kml.write('  <GroundOverlay>\n')
-        kml.write('    <name>ROV Bathymetric Overlay</name>\n')
-        kml.write('    <color>80ffffff</color>\n')
-        kml.write('    <Icon>\n')
-        kml.write(f'      <href>{image_name}</href>\n')
-        kml.write('    </Icon>\n')
-        kml.write('    <LatLonBox>\n')
-        kml.write(f'      <north>{lat_max}</north>\n')
-        kml.write(f'      <south>{lat_min}</south>\n')
-        kml.write(f'      <east>{lon_max}</east>\n')
-        kml.write(f'      <west>{lon_min}</west>\n')
-        kml.write('    </LatLonBox>\n')
-        kml.write('  </GroundOverlay>\n')
-        kml.write('</Document>\n')
-        kml.write('</kml>\n')
+        fig = plt.figure(figsize=(10, 8))
+        ax = fig.add_axes([0, 0, 1, 1])
+        ax.imshow(
+            zi,
+            extent=(lon_min, lon_max, lat_min, lat_max),
+            origin="lower",
+            aspect="auto",
+            alpha=0.85,
+        )
+        ax.axis("off")
+        plt.savefig(image_path, dpi=300, transparent=True, bbox_inches="tight", pad_inches=0)
+        plt.close(fig)
 
-    print(f"Created {image_path}")
-    print(f"Created {kml_path}")
+        kml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>ROV Bathymetric Overlay</name>
+    <GroundOverlay>
+      <name>Bathymetric Overlay</name>
+      <Icon>
+        <href>{image_name}</href>
+      </Icon>
+      <LatLonBox>
+        <north>{lat_max}</north>
+        <south>{lat_min}</south>
+        <east>{lon_max}</east>
+        <west>{lon_min}</west>
+      </LatLonBox>
+    </GroundOverlay>
+  </Document>
+</kml>
+'''
+        with open(kml_path, "w", encoding="utf-8") as f:
+            f.write(kml)
+
+        with zipfile.ZipFile(kmz_path, "w", zipfile.ZIP_DEFLATED) as kmz:
+            kmz.write(kml_path, arcname=kml_name)
+            kmz.write(image_path, arcname=image_name)
+
+        print(f"Created {kmz_path}")
+        print("Open the KMZ file in Google Earth.")
+    finally:
+        shutil.rmtree(temp_dir, ignore_errors=True)
+
 
 if __name__ == "__main__":
     main()
