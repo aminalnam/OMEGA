@@ -17,7 +17,7 @@ python csv_to_kml_colored.py MAP00.csv
 python google_earth_overlay.py MAP00.csv
 ```
 ---
-# Oceanic Geospatial Measurement System
+# Oceanic Measurement & Geospatial Array
 
 A compact underwater survey system that collects depth, position, and environmental data from a moving ROV and converts those measurements into bathymetric maps and georeferenced outputs.
 Measurements are filtered in real time using quality and spatial constraints, producing both a complete log and a reduced mapping dataset. A continuous surface is generated from the filtered points through spatial interpolation.
