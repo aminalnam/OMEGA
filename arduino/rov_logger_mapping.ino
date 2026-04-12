@@ -1,5 +1,5 @@
 // ============================================================
-// ROV LOGGER + DEPTH MAPPING SYSTEM (Arduino Mega)
+// Oceanic Measurement & Environmental Geospatial Array (OMEGA)
 // ============================================================
 //
 // PURPOSE
