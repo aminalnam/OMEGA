@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>06/18/2026 19:12:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:00
+Depth: 34.94 m
+Temperature: 16.1 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.20
+  Fix Age: 140 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 0.6°
+  Roll: -4.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.540057,33.9850167,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:06
+Depth: 34.23 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 240 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: 2.0°
+  Roll: -4.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5387994,33.9849662,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:12
+Depth: 33.83 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.80
+  Fix Age: 240 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: 2.2°
+  Roll: 1.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5376192,33.9850238,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:18
+Depth: 34.03 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.90
+  Fix Age: 240 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 0.5°
+  Roll: 2.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5363957,33.9850276,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:24
+Depth: 32.32 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.00
+  Fix Age: 240 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: -2.2°
+  Roll: -1.4°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5351672,33.9850194,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:30
+Depth: 28.55 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.30
+  Fix Age: 320 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: -1.5°
+  Roll: 4.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.533978,33.9850242,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:36
+Depth: 26.93 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.30
+  Fix Age: 140 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: -1.8°
+  Roll: 4.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5327589,33.9850222,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:42
+Depth: 24.18 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.90
+  Fix Age: 410 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: 0.2°
+  Roll: 2.4°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5316001,33.9849655,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:48
+Depth: 20.32 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.10
+  Fix Age: 140 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -2.2°
+  Roll: -3.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5304121,33.9850477,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:12:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:12:54
+Depth: 18.50 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.50
+  Fix Age: 140 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 1.2°
+  Roll: -3.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5292138,33.9850116,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:00
+Depth: 16.17 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.50
+  Fix Age: 240 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 3.0°
+  Roll: 2.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5280192,33.9850322,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:06
+Depth: 15.50 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.00
+  Fix Age: 410 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 2.7°
+  Roll: 0.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5268242,33.9850445,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:12
+Depth: 15.20 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.90
+  Fix Age: 410 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: 2.9°
+  Roll: -4.0°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5255485,33.9849423,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:18
+Depth: 14.29 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.50
+  Fix Age: 410 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 2.4°
+  Roll: -0.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5243426,33.9850379,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:24
+Depth: 35.78 m
+Temperature: 16.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.50
+  Fix Age: 320 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 2.6°
+  Roll: -0.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5399694,33.9860515,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:30
+Depth: 35.30 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.70
+  Fix Age: 140 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -1.7°
+  Roll: 3.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5388194,33.985967,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:36
+Depth: 34.83 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.30
+  Fix Age: 410 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -0.2°
+  Roll: 2.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5376314,33.9859485,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:42
+Depth: 33.34 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.40
+  Fix Age: 560 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: 3.1°
+  Roll: -3.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5364484,33.9859628,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:48
+Depth: 31.09 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.10
+  Fix Age: 240 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: -0.2°
+  Roll: 3.6°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5351639,33.9860274,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:13:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:13:54
+Depth: 29.48 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.40
+  Fix Age: 180 ms
+  Speed: 2.00 km/h
+
+Platform Orientation:
+  Pitch: -2.1°
+  Roll: -0.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5339566,33.9859932,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:00
+Depth: 26.12 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.90
+  Fix Age: 320 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.4°
+  Roll: 1.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5327517,33.9860438,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:06
+Depth: 24.49 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.70
+  Fix Age: 140 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: 0.5°
+  Roll: 0.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5316244,33.9859586,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:12
+Depth: 21.50 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.20
+  Fix Age: 140 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: 2.8°
+  Roll: 0.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5303991,33.9859468,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:18
+Depth: 18.66 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.90
+  Fix Age: 180 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -1.5°
+  Roll: -3.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5292097,33.9860143,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:24
+Depth: 17.38 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.50
+  Fix Age: 140 ms
+  Speed: 2.00 km/h
+
+Platform Orientation:
+  Pitch: 0.2°
+  Roll: 0.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5279485,33.9859949,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:30
+Depth: 16.06 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.10
+  Fix Age: 240 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 0.7°
+  Roll: 4.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5267543,33.986052,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:36
+Depth: 15.46 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.90
+  Fix Age: 560 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 0.3°
+  Roll: -2.2°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5255934,33.9860201,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:42
+Depth: 14.63 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.90
+  Fix Age: 140 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -2.6°
+  Roll: -0.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5244356,33.9860261,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:48
+Depth: 34.75 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.30
+  Fix Age: 320 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 0.4°
+  Roll: -3.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.54002,33.9869453,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:14:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:14:54
+Depth: 35.16 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.70
+  Fix Age: 140 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: 2.6°
+  Roll: -2.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5387598,33.9870055,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:00
+Depth: 34.52 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.30
+  Fix Age: 180 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 2.3°
+  Roll: 4.6°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5376176,33.98702,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:06
+Depth: 33.69 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.30
+  Fix Age: 180 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -1.5°
+  Roll: 2.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.536457,33.9870458,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:12
+Depth: 31.54 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.00
+  Fix Age: 180 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -1.8°
+  Roll: 1.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5352554,33.9869859,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:18
+Depth: 30.02 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 410 ms
+  Speed: 2.00 km/h
+
+Platform Orientation:
+  Pitch: -1.1°
+  Roll: -4.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5339563,33.9869794,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:24
+Depth: 26.15 m
+Temperature: 16.9 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.00
+  Fix Age: 320 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 0.7°
+  Roll: 0.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5327445,33.9869614,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:30
+Depth: 22.88 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.40
+  Fix Age: 560 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 2.8°
+  Roll: 2.3°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5316372,33.9870479,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:36
+Depth: 21.07 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.20
+  Fix Age: 240 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 0.0°
+  Roll: 1.6°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5304516,33.9869837,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:42
+Depth: 17.80 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.20
+  Fix Age: 410 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 0.4°
+  Roll: -0.9°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5292245,33.9869883,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:48
+Depth: 17.00 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.10
+  Fix Age: 180 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: 0.1°
+  Roll: 2.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5280348,33.9869765,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:15:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:15:54
+Depth: 15.58 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.40
+  Fix Age: 560 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.2°
+  Roll: 2.9°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5268259,33.9870191,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:00
+Depth: 14.60 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.10
+  Fix Age: 410 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -2.0°
+  Roll: 1.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5256306,33.9869429,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:06
+Depth: 14.59 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.30
+  Fix Age: 560 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: 0.1°
+  Roll: -4.3°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5244423,33.986988,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:12
+Depth: 34.45 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.50
+  Fix Age: 320 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 0.7°
+  Roll: 2.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5400454,33.9880501,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:18
+Depth: 35.36 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.10
+  Fix Age: 560 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.4°
+  Roll: 2.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5387943,33.9880397,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:24
+Depth: 33.45 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.00
+  Fix Age: 140 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -2.3°
+  Roll: -2.6°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.537627,33.9880152,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:30
+Depth: 32.86 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.70
+  Fix Age: 320 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 2.6°
+  Roll: 0.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5364523,33.9880248,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:36
+Depth: 31.09 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.90
+  Fix Age: 320 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: 0.2°
+  Roll: 2.3°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5351681,33.9880428,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:42
+Depth: 28.95 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.30
+  Fix Age: 180 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 3.1°
+  Roll: 0.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5340272,33.9879986,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:48
+Depth: 25.56 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 240 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: -1.8°
+  Roll: -1.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5327804,33.988011,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:16:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:16:54
+Depth: 23.18 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.70
+  Fix Age: 240 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: -1.8°
+  Roll: -4.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5315459,33.9879734,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:00
+Depth: 20.02 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.90
+  Fix Age: 140 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: 0.4°
+  Roll: -2.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.530346,33.9880305,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:06
+Depth: 18.26 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.30
+  Fix Age: 240 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: -2.5°
+  Roll: -4.6°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5292399,33.988032,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:12
+Depth: 16.04 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 560 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -1.6°
+  Roll: 1.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.527951,33.9880091,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:18
+Depth: 14.41 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.00
+  Fix Age: 240 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: -2.8°
+  Roll: 1.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.526788,33.988042,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:24
+Depth: 13.70 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.30
+  Fix Age: 560 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: 0.1°
+  Roll: 1.4°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5255613,33.9880419,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:30
+Depth: 14.13 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.40
+  Fix Age: 320 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: -1.6°
+  Roll: -0.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5243609,33.9879958,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:36
+Depth: 34.46 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.30
+  Fix Age: 410 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: 1.3°
+  Roll: -2.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5400007,33.9889804,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:42
+Depth: 34.01 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.30
+  Fix Age: 560 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: 1.4°
+  Roll: -0.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5388371,33.989002,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:48
+Depth: 34.13 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 240 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: -0.5°
+  Roll: 2.4°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5376334,33.9889512,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:17:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:17:54
+Depth: 32.40 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.00
+  Fix Age: 560 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -2.0°
+  Roll: -2.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5364056,33.9889822,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:00
+Depth: 31.40 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.40
+  Fix Age: 240 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: -2.1°
+  Roll: -4.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5351892,33.9889732,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:06
+Depth: 28.75 m
+Temperature: 16.9 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.20
+  Fix Age: 140 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 2.4°
+  Roll: 0.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5339431,33.9889729,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:12
+Depth: 26.67 m
+Temperature: 16.9 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 320 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: -2.7°
+  Roll: 1.2°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5328191,33.9889974,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:18
+Depth: 23.72 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 0.6°
+  Roll: 1.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5315627,33.9889582,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:24
+Depth: 20.78 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.20
+  Fix Age: 560 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: -2.6°
+  Roll: 2.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5304069,33.9889941,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:30
+Depth: 17.37 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.70
+  Fix Age: 410 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: -0.2°
+  Roll: -4.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5292503,33.9889718,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:36
+Depth: 15.87 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.30
+  Fix Age: 560 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 1.9°
+  Roll: -2.9°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5279756,33.9890248,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:42
+Depth: 15.37 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.70
+  Fix Age: 410 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 1.6°
+  Roll: 0.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5267823,33.9890053,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:48
+Depth: 13.72 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.10
+  Fix Age: 140 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: 0.6°
+  Roll: 3.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5256038,33.9889927,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:18:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:18:54
+Depth: 13.24 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.20
+  Fix Age: 560 ms
+  Speed: 0.70 km/h
+
+Platform Orientation:
+  Pitch: 2.1°
+  Roll: 0.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5244569,33.9890124,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:00
+Depth: 35.28 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 140 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -0.2°
+  Roll: -0.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5399818,33.9899965,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:06
+Depth: 34.03 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.20
+  Fix Age: 410 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: -3.0°
+  Roll: -4.0°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5387571,33.9900204,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:12
+Depth: 33.54 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.20
+  Fix Age: 320 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: -2.9°
+  Roll: 0.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5375436,33.9899788,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:18
+Depth: 32.11 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.10
+  Fix Age: 140 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -3.0°
+  Roll: 1.2°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5363688,33.990015,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:24
+Depth: 30.08 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.50
+  Fix Age: 320 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 2.9°
+  Roll: 1.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5352227,33.9900252,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:30
+Depth: 28.56 m
+Temperature: 16.9 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.50
+  Fix Age: 410 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: -2.3°
+  Roll: -3.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.533974,33.9899998,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:36
+Depth: 26.27 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.90
+  Fix Age: 560 ms
+  Speed: 0.70 km/h
+
+Platform Orientation:
+  Pitch: -1.3°
+  Roll: 0.8°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5328269,33.9900437,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:42
+Depth: 22.86 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 180 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 3.1°
+  Roll: -2.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5316064,33.9900438,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:48
+Depth: 19.35 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.00
+  Fix Age: 560 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: 3.1°
+  Roll: -0.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5303669,33.989968,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:19:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:19:54
+Depth: 17.40 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 140 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 1.4°
+  Roll: -0.9°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5291442,33.9899551,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:00
+Depth: 15.44 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.20
+  Fix Age: 560 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 2.3°
+  Roll: -1.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5279662,33.989949,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:06
+Depth: 14.57 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.80
+  Fix Age: 240 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 3.2°
+  Roll: 2.4°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5267535,33.9900152,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:12
+Depth: 14.23 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.30
+  Fix Age: 140 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -1.1°
+  Roll: -4.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5255688,33.9900574,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:18
+Depth: 13.61 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 320 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: 0.8°
+  Roll: -2.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5244425,33.989985,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:24
+Depth: 34.73 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.40
+  Fix Age: 180 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -2.7°
+  Roll: 4.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5399835,33.9909679,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:30
+Depth: 34.08 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.50
+  Fix Age: 140 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -1.7°
+  Roll: 0.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5388091,33.9910167,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:36
+Depth: 34.65 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.70
+  Fix Age: 560 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 3.0°
+  Roll: 3.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5376246,33.9910591,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:42
+Depth: 33.21 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.90
+  Fix Age: 240 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 1.1°
+  Roll: 2.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5363516,33.9910399,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:48
+Depth: 31.28 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.70
+  Fix Age: 180 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: -2.6°
+  Roll: -2.0°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5351516,33.9910154,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:20:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:20:54
+Depth: 28.79 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.10
+  Fix Age: 180 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: -1.6°
+  Roll: 3.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5340441,33.9909611,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:00
+Depth: 26.58 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.50
+  Fix Age: 180 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 2.3°
+  Roll: 2.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5328246,33.9910561,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:06
+Depth: 22.85 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.90
+  Fix Age: 240 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: 1.1°
+  Roll: 1.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5315634,33.9910561,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:12
+Depth: 19.64 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.20
+  Fix Age: 240 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 2.7°
+  Roll: -2.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5303472,33.9910387,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:18
+Depth: 18.17 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.80
+  Fix Age: 240 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 3.2°
+  Roll: -3.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5292043,33.9910162,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:24
+Depth: 15.93 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 180 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 2.5°
+  Roll: 1.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5280437,33.9910465,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:30
+Depth: 14.43 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.10
+  Fix Age: 240 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -2.6°
+  Roll: 1.8°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5267473,33.9910139,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:36
+Depth: 14.84 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 560 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: 0.6°
+  Roll: -4.6°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5256269,33.9909473,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:42
+Depth: 13.84 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.90
+  Fix Age: 180 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: -1.1°
+  Roll: -3.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5244449,33.9909692,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:48
+Depth: 36.12 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 180 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -3.1°
+  Roll: 2.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5399419,33.9919733,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:21:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:21:54
+Depth: 34.65 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.10
+  Fix Age: 320 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -0.3°
+  Roll: -1.3°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5388581,33.9920107,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:00
+Depth: 34.60 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.90
+  Fix Age: 140 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: -2.8°
+  Roll: -0.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5376334,33.9919942,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:06
+Depth: 33.65 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.00
+  Fix Age: 180 ms
+  Speed: 0.90 km/h
+
+Platform Orientation:
+  Pitch: -1.4°
+  Roll: 1.3°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.536447,33.9919912,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:12
+Depth: 31.25 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 560 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: 1.0°
+  Roll: 2.6°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5351883,33.9919857,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:18
+Depth: 29.13 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.00
+  Fix Age: 320 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: -1.2°
+  Roll: -2.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5339534,33.9919916,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:24
+Depth: 25.87 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 180 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 0.4°
+  Roll: 0.8°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5328031,33.9920224,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:30
+Depth: 24.20 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.40
+  Fix Age: 240 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: 0.6°
+  Roll: -1.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5316107,33.9920204,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:36
+Depth: 21.36 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 410 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.8°
+  Roll: -0.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5304021,33.9919586,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:42
+Depth: 18.70 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.30
+  Fix Age: 240 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: -1.0°
+  Roll: -3.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5291811,33.9920131,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:48
+Depth: 15.97 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.80
+  Fix Age: 320 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: -0.5°
+  Roll: -1.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5280119,33.992008,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:22:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:22:54
+Depth: 16.02 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.80
+  Fix Age: 140 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: 1.1°
+  Roll: -2.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5268211,33.9919774,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:00
+Depth: 14.27 m
+Temperature: 17.5 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.00
+  Fix Age: 560 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: 1.1°
+  Roll: -0.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.525607,33.9919983,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:06
+Depth: 14.44 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.50
+  Fix Age: 240 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.3°
+  Roll: -3.6°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5244126,33.9919455,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:12
+Depth: 35.98 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.10
+  Fix Age: 240 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -2.7°
+  Roll: 3.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5400389,33.9930296,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:18
+Depth: 35.18 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.20
+  Fix Age: 320 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -1.3°
+  Roll: -0.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5388048,33.9929923,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:24
+Depth: 35.19 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.80
+  Fix Age: 180 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: -0.4°
+  Roll: -1.0°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5375463,33.9929606,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:30
+Depth: 33.89 m
+Temperature: 16.6 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: 0.1°
+  Roll: 3.9°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5364228,33.9929875,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:36
+Depth: 32.65 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.00 km/h
+
+Platform Orientation:
+  Pitch: -2.2°
+  Roll: 2.5°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.535145,33.9929821,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:42
+Depth: 30.09 m
+Temperature: 16.9 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.10
+  Fix Age: 410 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: 0.9°
+  Roll: 4.7°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5339673,33.9929613,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:48
+Depth: 26.80 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.20
+  Fix Age: 410 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -2.8°
+  Roll: 0.1°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5327847,33.9930437,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:23:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:23:54
+Depth: 24.23 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.20
+  Fix Age: 320 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 0.5°
+  Roll: 4.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5316555,33.9929954,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:00
+Depth: 21.88 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.10
+  Fix Age: 320 ms
+  Speed: 1.90 km/h
+
+Platform Orientation:
+  Pitch: -2.5°
+  Roll: 3.8°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5303628,33.992994,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:06
+Depth: 19.46 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.50
+  Fix Age: 410 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: -2.2°
+  Roll: -1.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5292499,33.9930579,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:12
+Depth: 17.66 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.80
+  Fix Age: 560 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: -0.7°
+  Roll: -2.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5279671,33.9929865,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:18
+Depth: 15.58 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 140 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -1.2°
+  Roll: -1.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5267901,33.99298,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:24
+Depth: 15.99 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -0.9°
+  Roll: -1.3°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5255796,33.9930376,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:30
+Depth: 15.54 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 140 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: 0.0°
+  Roll: 0.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.524419,33.9930541,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:36
+Depth: 37.37 m
+Temperature: 16.2 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 2.0°
+  Roll: -3.2°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5399548,33.9940194,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:42
+Depth: 37.22 m
+Temperature: 16.3 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 0.90
+  Fix Age: 320 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.7°
+  Roll: -2.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5388163,33.9939452,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:48
+Depth: 36.55 m
+Temperature: 16.4 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.10
+  Fix Age: 320 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: 0.0°
+  Roll: -0.8°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5376367,33.9940485,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:24:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:24:54
+Depth: 34.58 m
+Temperature: 16.5 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 1.40
+  Fix Age: 140 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 1.4°
+  Roll: 0.2°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5363638,33.994038,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:00</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:00
+Depth: 33.06 m
+Temperature: 16.7 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.40
+  Fix Age: 180 ms
+  Speed: 0.80 km/h
+
+Platform Orientation:
+  Pitch: 2.0°
+  Roll: 3.7°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5351684,33.9939742,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:06</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:06
+Depth: 30.91 m
+Temperature: 16.8 °C
+
+GPS Quality:
+  Satellites: 8
+  HDOP: 1.00
+  Fix Age: 140 ms
+  Speed: 0.70 km/h
+
+Platform Orientation:
+  Pitch: 2.2°
+  Roll: 1.4°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5340124,33.9939898,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:12</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:12
+Depth: 28.89 m
+Temperature: 17.0 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 1.30
+  Fix Age: 410 ms
+  Speed: 1.30 km/h
+
+Platform Orientation:
+  Pitch: -3.2°
+  Roll: -4.0°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5328256,33.9939565,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:18</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:18
+Depth: 26.15 m
+Temperature: 17.1 °C
+
+GPS Quality:
+  Satellites: 11
+  HDOP: 0.80
+  Fix Age: 240 ms
+  Speed: 1.10 km/h
+
+Platform Orientation:
+  Pitch: -2.4°
+  Roll: -2.5°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5316421,33.9939659,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:24</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:24
+Depth: 22.65 m
+Temperature: 17.2 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.20
+  Fix Age: 240 ms
+  Speed: 1.60 km/h
+
+Platform Orientation:
+  Pitch: -0.5°
+  Roll: 1.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5303596,33.9939475,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:30</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:30
+Depth: 20.50 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.80
+  Fix Age: 410 ms
+  Speed: 1.40 km/h
+
+Platform Orientation:
+  Pitch: 1.8°
+  Roll: 0.1°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5292375,33.9940085,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:36</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:36
+Depth: 18.60 m
+Temperature: 17.4 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 1.30
+  Fix Age: 140 ms
+  Speed: 1.20 km/h
+
+Platform Orientation:
+  Pitch: -1.0°
+  Roll: 2.2°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5280036,33.9939869,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:42</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:42
+Depth: 16.89 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 12
+  HDOP: 1.00
+  Fix Age: 560 ms
+  Speed: 1.50 km/h
+
+Platform Orientation:
+  Pitch: -0.2°
+  Roll: 1.9°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5267718,33.9940326,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:48</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:48
+Depth: 16.91 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 10
+  HDOP: 0.90
+  Fix Age: 140 ms
+  Speed: 1.70 km/h
+
+Platform Orientation:
+  Pitch: -1.2°
+  Roll: -1.8°
+  IMU Accuracy: High]]></description>
+  <Point><coordinates>-118.5256524,33.9940374,0</coordinates></Point>
+</Placemark>
+<Placemark>
+  <name>06/18/2026 19:25:54</name>
+  <description><![CDATA[UTC: 06/18/2026 19:25:54
+Depth: 15.73 m
+Temperature: 17.3 °C
+
+GPS Quality:
+  Satellites: 9
+  HDOP: 0.90
+  Fix Age: 140 ms
+  Speed: 1.80 km/h
+
+Platform Orientation:
+  Pitch: 2.3°
+  Roll: -1.6°
+  IMU Accuracy: Medium]]></description>
+  <Point><coordinates>-118.5243948,33.9940587,0</coordinates></Point>
+</Placemark>
+</Document>
+</kml>
