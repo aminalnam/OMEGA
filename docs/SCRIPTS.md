@@ -47,7 +47,7 @@ python contour_map.py MAP00.CSV
 
 ### 6. `google_earth_overlay.py`
 Creates:
-- a georeferenced overlay PNG
+- a georeferenced overlay KMZ
 - a KML GroundOverlay that places the image correctly in Google Earth
 
 ```bash
