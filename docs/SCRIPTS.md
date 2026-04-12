@@ -1,4 +1,4 @@
-# ROV Mapping Suite v2
+# Oceanic Measurement & Environmental Geospatial Array
 
 These scripts work with CSV files produced by the Arduino ROV mapping logger.
 
