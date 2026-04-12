@@ -42,6 +42,7 @@ arduino/
 
 docs/
   SYSTEM.md
+  scriptsSYSTEM.md
 
 scripts/
   csv_to_kml.py
