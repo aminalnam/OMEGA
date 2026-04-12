@@ -204,7 +204,7 @@ point,date_utc,time_utc,lat,lng,depth_cm,temp_c,satellites,hdop,speed_kmph,fix_a
 - `*_interpolated.png` — interpolated surface
 - `*_contours.png` — contour visualization
 - `*_colored.kml` — colorized Google Earth points
-- `*_overlay.kml` + `*_overlay.png` — Google Earth ground overlay
+- `*_overlay.kmz` — Google Earth ground overlay
 
 ---
 
@@ -227,8 +227,7 @@ Running the scripts produces:
 * `*_interpolated.png`
 * `*_contours.png`
 * `*_colored.kml`
-* `*_overlay.kml`
-* `*_overlay.png`
+* `*_overlay.kmz`
 ---
 
 ## Method
