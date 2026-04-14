@@ -1,5 +1,3 @@
-Here it is as plain markdown you can copy directly:
-
 # Oceanic Measurement & Environmental Geospatial Array
 
 ## Script Reference
