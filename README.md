@@ -10,11 +10,11 @@
 ## Quick Start
 
 ```bash
-python depth_map.py MAP00.csv
-python interpolated_map.py MAP00.csv
-python contour_map.py MAP00.csv
-python csv_to_kml_colored.py MAP00.csv
-python google_earth_overlay.py MAP00.csv
+python csv_to_png_depth_points.py MAP00.csv
+python csv_to_png_depth_interpolated.py MAP00.csv
+python csv_to_png_depth_contours.py MAP00.csv
+python csv_to_kml_points_colored.py MAP00.csv
+python csv_to_kmz_depth_overlay.py MAP00.csv
 ```
 ---
 # Oceanic Measurement & Environmental Geospatial Array
