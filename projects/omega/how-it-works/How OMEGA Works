@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How OMEGA Works</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #d9e2ec;
+      --accent: #1f4b63;
+      --accent-2: #486581;
+      --soft: #f8fafc;
+      --code-bg: #0f1720;
+      --code-text: #d6deeb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 72px;
+    }
+
+    header, section, footer {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+    }
+
+    header {
+      padding: 32px;
+      margin-bottom: 22px;
+    }
+
+    section {
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 22px;
+      padding: 24px 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+      max-width: 900px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.72rem;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.08rem;
+      color: var(--accent);
+    }
+
+    p { margin: 0 0 14px; }
+
+    .intro, .lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 920px;
+    }
+
+    nav {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--accent);
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eef2f6;
+      border: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--soft);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .data-box {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: #f8fafc;
+      overflow-x: auto;
+      white-space: nowrap;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.95rem;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 18px;
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid #1e293b;
+      background: var(--code-bg);
+      color: var(--code-text);
+      font-size: 0.92rem;
+      line-height: 1.56;
+    }
+
+    code {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding: 16px;
+      border-left: 4px solid var(--accent-2);
+      border-radius: 10px;
+      background: #f7fafc;
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .step {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--soft);
+    }
+
+    .step .num {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e9eff5;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .status-card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fbfcfd;
+    }
+
+    .status-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+
+    .small-label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+    }
+
+    .cer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .cer-block {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--soft);
+    }
+
+    .cer-block strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      background: #f5f8fb;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    @media (max-width: 920px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>How OMEGA Works</h1>
+      <p class="intro">
+        OMEGA can be used to teach a connected set of ideas in marine science, physics, measurement, and mapping. The sections below explain the main concepts in the system, show where they appear in the code, and clarify how those ideas shape the final bathymetric map.
+      </p>
+      <nav>
+        <a href="#concept-1">Acoustic Depth</a>
+        <a href="#concept-2">Data Validity</a>
+        <a href="#concept-3">Temperature and Sound Speed</a>
+        <a href="#concept-4">Depth and Position</a>
+        <a href="#concept-5">Interpolation</a>
+      </nav>
+    </header>
+
+    <section id="concept-1">
+      <span class="small-label">Concept 1</span>
+      <h2>Acoustic depth measurement</h2>
+      <p class="lead">
+        OMEGA measures depth by using sound to estimate the distance between the sensor and the bottom.
+      </p>
+
+      <h3>The idea</h3>
+      <p>
+        The sonar sends an acoustic pulse downward through the water. That pulse reflects off the bottom and returns to the sensor. The system uses the travel time of that pulse, together with an assumed sound speed, to estimate distance.
+      </p>
+      <div class="data-box">depth = (sound speed × travel time) / 2</div>
+      <p>
+        The division by two matters because the pulse travels the path twice: once downward and once back upward. The sensor is measuring total round-trip time, but the goal is one-way distance to the bottom.
+      </p>
+
+      <h3>In OMEGA</h3>
+      <p>
+        In the logger, the decoded sonar reading is first turned into centimeters, then corrected, checked, and added to the depth stream. That means the number coming from the sensor is only one stage in the process. The system still has to decide how that reading should be interpreted and whether it fits the accepted operating range.
+      </p>
+
+      <h3>Code example</h3>
+      <pre><code>// Convert the decoded sonar packet into centimeters.
+float reportedDepthCm = raw / 10.0f;
+
+// Apply the temperature-based sound-speed correction.
+float correctedDepthCm = correctSonarRangeCm(reportedDepthCm, tempC);
+
+// Keep only values that fall inside the accepted operating range.
+if (correctedDepthCm &gt;= 2.0f &amp;&amp; correctedDepthCm &lt;= 800.0f) {
+  // Add the corrected depth to the smoothing buffer.
+  addDepthSample(correctedDepthCm);
+}
+</code></pre>
+      <p>
+        This snippet shows that depth is not simply read and stored. The value is converted, corrected, constrained to a usable range, and then added to the working dataset.
+      </p>
+
+      <h3>Why this matters</h3>
+      <p>
+        This concept is a strong entry point into underwater sensing because it shows how a physical principle becomes a scientific tool. OMEGA is not touching the bottom directly. It is inferring bottom distance from the behavior of a wave traveling through water.
+      </p>
+      <p>
+        It also introduces the idea that an instrument reading is often the result of a model. The depth value depends on assumptions about the medium and on how the signal is processed after it is received.
+      </p>
+    </section>
+
+    <section id="concept-2">
+      <span class="small-label">Concept 2</span>
+      <h2>Why data validity matters</h2>
+      <p class="lead">
+        OMEGA does not treat every reading as equally reliable. It checks whether a point is strong enough to become part of the map.
+      </p>
+
+      <h3>The idea</h3>
+      <p>
+        A sensor can return a number even when survey conditions are poor. In bathymetry, a useful point needs more than a depth reading. The position has to be trustworthy, the depth has to be stable, and the platform has to be operating within acceptable motion and orientation limits.
+      </p>
+      <p>
+        This is why validity matters so much in a mapping system. A weak point does not stay isolated. Once it enters the mapping dataset, it can influence interpolation, contour shape, and the appearance of the final surface.
+      </p>
+
+      <h3>In OMEGA</h3>
+      <p>
+        OMEGA makes these checks explicit. The code examines GPS readiness, number of satellites, horizontal dilution of precision, fix age, depth readiness, platform speed, pitch, roll, and IMU state. Only points that pass those checks are considered ready for mapping.
+      </p>
+
+      <h3>Code example</h3>
+      <pre><code>const char* getMapStatus(unsigned long currentMillis) {
+  if (millis() - startupMillis &lt; gpsWarmupTime) return "WARMUP";
+  if (!mapReady || !sdReady || !mapFile) return "NOFILE";
+  if (!gpsDataPresent(currentMillis)) return "NOGPS";
+  if (!gps.location.isValid()) return "NOFIX";
+  if (!gps.date.isValid() || !gps.time.isValid()) return "NOTIME";
+  if (isnan(depthCm)) return "NODEP";
+  if (depthSamplesCollected &lt; 3) return "WARM";
+  if (!gps.satellites.isValid()) return "SAT";
+  if (gps.satellites.value() &lt; minMapSats) return "SAT";
+  if (!gps.hdop.isValid()) return "HDOP";
+  if (gps.hdop.hdop() &gt; maxMapHdop) return "HDOP";
+  if (gps.location.age() &gt; maxMapFixAgeMs) return "STALE";
+  if (!isnan(smoothedSpeed) &amp;&amp; smoothedSpeed &gt; maxMapSpeedKmph) return "FAST";
+
+  if (requireLevelForMapping) {
+    if (!imuReady) return "NOIMU";
+    if (!imuOrientationValid) return "IMU?";
+    if (imuAccuracy &lt; minImuAccuracyForMapping) return "CAL";
+    if (fabs(imuPitchDeg) &gt; maxMapPitchDeg || fabs(imuRollDeg) &gt; maxMapRollDeg) return "UNLVL";
+  }
+
+  return "ARMED";
+}
+</code></pre>
+      <p>
+        The value returned by this function is a compact summary of point quality. It lets the system distinguish between a point that is merely present and a point that is actually usable in the survey.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Status group</th>
+            <th>What it checks</th>
+            <th>Why it matters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>NOFIX</code>, <code>SAT</code>, <code>HDOP</code>, <code>STALE</code></td>
+            <td>Position quality and recency</td>
+            <td>A depth reading without a trustworthy location weakens the map because bathymetry depends on where the point was measured.</td>
+          </tr>
+          <tr>
+            <td><code>NODEP</code>, <code>WARM</code></td>
+            <td>Whether the depth reading exists and has stabilized</td>
+            <td>An unstable depth value is not strong enough to represent the bottom clearly.</td>
+          </tr>
+          <tr>
+            <td><code>FAST</code>, <code>UNLVL</code></td>
+            <td>Platform speed and orientation</td>
+            <td>Movement and tilt affect how well the reading represents the bottom under the sensor.</td>
+          </tr>
+          <tr>
+            <td><code>NOIMU</code>, <code>CAL</code></td>
+            <td>Whether orientation data is available and calibrated</td>
+            <td>The system needs usable orientation data if it is going to judge whether mapping conditions are acceptable.</td>
+          </tr>
+          <tr>
+            <td><code>ARMED</code></td>
+            <td>The point has passed the checks</td>
+            <td>This point is ready to become part of the mapping dataset.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Why this matters</h3>
+      <p>
+        This is one of the clearest concepts for teaching scientific measurement. The issue is not only whether the instrument can produce numbers. The issue is whether those numbers are good enough to support interpretation.
+      </p>
+      <p>
+        In field science, quality control is part of the measurement process itself. OMEGA makes that visible in code, which is useful because students can see that reliability is not abstract. It is expressed through thresholds, checks, and decisions about what counts as usable evidence.
+      </p>
+    </section>
+
+    <section id="concept-3">
+      <span class="small-label">Concept 3</span>
+      <h2>Temperature changes the depth reading by changing sound speed</h2>
+      <p class="lead">
+        OMEGA records temperature because the speed of sound in water is not fixed. That affects how sonar depth should be interpreted.
+      </p>
+
+      <h3>The idea</h3>
+      <p>
+        Sonar depends on travel time, but travel time only becomes distance when the system knows what sound speed to assume. If sound is moving through colder or warmer water than the calibration condition, the resulting depth estimate shifts.
+      </p>
+      <p>
+        Temperature matters because it changes the physical behavior of the medium through which the signal travels. The water is not just a setting around the measurement. It is part of the measurement model.
+      </p>
+
+      <h3>In OMEGA</h3>
+      <p>
+        OMEGA uses the measured water temperature to adjust the baseline sound speed used during calibration. The corrected sound-speed estimate is then used to rescale the reported sonar range.
+      </p>
+
+      <h3>Code example</h3>
+      <pre><code>float estimateSoundSpeed(float waterTempC) {
+  float c = sonarCalSoundSpeed;
+
+  if (!isnan(waterTempC)) {
+    c += 4.6f * (waterTempC - sonarCalTempC);
+  }
+
+  return c;
+}
+
+float correctSonarRangeCm(float reportedRangeCm, float waterTempC) {
+  float cActual = estimateSoundSpeed(waterTempC);
+  return reportedRangeCm * (cActual / sonarCalSoundSpeed);
+}
+</code></pre>
+      <div class="data-box">Calibration sound speed = 1500.0     Calibration temperature = 20°C</div>
+      <div class="data-box">Measured temperature = 15°C     Reported depth = 200 cm</div>
+      <div class="data-box">Estimated sound speed = 1500 + 4.6 × (15 - 20) = 1477</div>
+      <div class="data-box">Corrected depth = 200 × (1477 / 1500) ≈ 196.9 cm</div>
+      <p>
+        In this example, cooler water lowers the estimated sound speed, which slightly lowers the corrected depth.
+      </p>
+
+      <h3>Why salinity is not included here</h3>
+      <p>
+        Salinity also affects sound speed, but OMEGA does not currently measure salinity directly. Temperature is already present in the system and provides a clear, teachable way to show how environmental conditions affect the calculation. In more advanced versions, salinity could be added to expand the correction model.
+      </p>
+
+      <h3>Why this matters</h3>
+      <p>
+        This concept helps explain that instruments often rely on partial models of the world. OMEGA is not trying to build the most complex sound-speed model possible. It is using a model that matches the available sensors and the goals of the system.
+      </p>
+      <p>
+        That makes this section useful for teaching both marine science and engineering. Students can see that real devices are built from tradeoffs: what variables are measured, what variables are omitted, and how those decisions affect the final result.
+      </p>
+    </section>
+
+    <section id="concept-4">
+      <span class="small-label">Concept 4</span>
+      <h2>Depth becomes bathymetry when it is tied to position</h2>
+      <p class="lead">
+        A single depth reading can describe local water depth. Bathymetry begins when that depth is tied to coordinates and becomes part of a spatial dataset.
+      </p>
+
+      <h3>The idea</h3>
+      <p>
+        Bathymetry is not just the collection of depth values. It is the description of underwater shape across space. That means each depth measurement has to remain attached to where it was recorded.
+      </p>
+      <p>
+        This is why position matters so much in OMEGA. Without latitude and longitude, a depth value can tell you how deep the water was at one moment, but it cannot be placed onto a map, compared across a path, or used to reconstruct bottom form.
+      </p>
+
+      <h3>In OMEGA</h3>
+      <p>
+        The logger records time, coordinates, depth, temperature, and other conditions into a single survey record. Later, the mapping script separates latitude, longitude, and depth so those values can be placed into a grid and used for interpolation.
+      </p>
+
+      <div class="data-box">timestamp_utc,latitude,longitude,depth_cm,temp_c,pitch_deg,roll_deg,sats,hdop,valid_fix</div>
+      <div class="data-box">2026-04-14T21:08:42Z,34.0092145,-118.4972512,186.4,17.3,1.8,-0.6,10,0.82,1</div>
+
+      <h3>Code example</h3>
+      <pre><code>// Write one survey record so the depth stays attached
+// to its location and measurement conditions.
+logFile.print(timestampUtc);
+logFile.print(",");
+logFile.print(latitude, 7);
+logFile.print(",");
+logFile.print(longitude, 7);
+logFile.print(",");
+logFile.print(depthCm, 1);
+logFile.print(",");
+logFile.print(tempC, 1);
+logFile.print(",");
+logFile.print(imuPitchDeg, 1);
+logFile.print(",");
+logFile.print(imuRollDeg, 1);
+</code></pre>
+      <pre><code>def build_grid(points, grid_size, power):
+    lats = np.array([p["lat"] for p in points], dtype=float)
+    lons = np.array([p["lon"] for p in points], dtype=float)
+    depths = np.array([p["depth_m"] for p in points], dtype=float)
+
+    lon_min, lon_max = lons.min(), lons.max()
+    lat_min, lat_max = lats.min(), lats.max()
+</code></pre>
+      <p>
+        The Arduino code keeps the measurement and its location together. The Python code later pulls those pieces apart so the survey points can be used spatially.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>What it contributes</th>
+            <th>Why it matters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>depth_cm</code></td>
+            <td>The measured vertical distance</td>
+            <td>This is the value being mapped.</td>
+          </tr>
+          <tr>
+            <td><code>latitude</code>, <code>longitude</code></td>
+            <td>The geographic location of the point</td>
+            <td>These coordinates place the depth inside the survey area.</td>
+          </tr>
+          <tr>
+            <td><code>timestamp_utc</code></td>
+            <td>The sequence of the survey</td>
+            <td>Time helps reconstruct the path and order of measurement.</td>
+          </tr>
+          <tr>
+            <td><code>temp_c</code>, <code>pitch_deg</code>, <code>roll_deg</code>, <code>hdop</code></td>
+            <td>The conditions attached to the point</td>
+            <td>These values help interpret the quality and context of the measurement.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Why this matters</h3>
+      <p>
+        This section helps connect measurement to geospatial thinking. OMEGA is not only determining how deep the water is. It is building a set of measurements that describe where depth changes occur across an area.
+      </p>
+      <p>
+        It also clarifies why GPS quality appears so prominently in the validation logic. Position is not extra information around the depth reading. It is part of what makes the reading useful for bathymetry in the first place.
+      </p>
+    </section>
+
+    <section id="concept-5">
+      <span class="small-label">Concept 5</span>
+      <h2>Interpolation builds a continuous surface from discrete points</h2>
+      <p class="lead">
+        OMEGA does not measure every location on the bottom. It measures selected points and uses interpolation to estimate the surface between them.
+      </p>
+
+      <h3>The idea</h3>
+      <p>
+        Survey data is made of individual points distributed across an area. A map, however, often needs to look continuous. Interpolation is the process that estimates values between measured locations so those discrete points can become a surface.
+      </p>
+      <p>
+        OMEGA uses inverse distance weighting, or IDW. In this approach, nearby points have more influence on an estimated location than distant points do.
+      </p>
+      <div class="data-box">estimated_value = sum(weight × known_value) / sum(weight)   where weight = 1 / distance^power</div>
+
+      <h3>In OMEGA</h3>
+      <p>
+        The Python mapping script first builds a grid over the surveyed area. It then calculates an estimated depth for each grid cell by weighting the surrounding measured points according to distance.
+      </p>
+
+      <h3>Code example</h3>
+      <pre><code>def idw_interpolation(x, y, z, xi, yi, power=2.0, epsilon=1e-12):
+    zi = np.zeros_like(xi, dtype=float)
+
+    for row in range(xi.shape[0]):
+        for col in range(xi.shape[1]):
+            dx = x - xi[row, col]
+            dy = y - yi[row, col]
+            dist = np.sqrt(dx * dx + dy * dy)
+
+            if np.any(dist &lt; epsilon):
+                zi[row, col] = z[np.argmin(dist)]
+                continue
+
+            weights = 1.0 / np.power(dist, power)
+            zi[row, col] = np.sum(weights * z) / np.sum(weights)
+
+    return zi
+</code></pre>
+      <pre><code>def build_grid(points, grid_size, power):
+    lats = np.array([p["lat"] for p in points], dtype=float)
+    lons = np.array([p["lon"] for p in points], dtype=float)
+    depths = np.array([p["depth_m"] for p in points], dtype=float)
+
+    lon_min, lon_max = lons.min(), lons.max()
+    lat_min, lat_max = lats.min(), lats.max()
+
+    xi_vals = np.linspace(lon_min, lon_max, grid_size)
+    yi_vals = np.linspace(lat_min, lat_max, grid_size)
+    xi, yi = np.meshgrid(xi_vals, yi_vals)
+
+    zi = idw_interpolation(lons, lats, depths, xi, yi, power=power)
+    return lons, lats, depths, xi, yi, zi
+</code></pre>
+      <p>
+        The first function performs the weighted estimate. The second creates the grid that those estimates will fill.
+      </p>
+
+      <h3>Why this matters</h3>
+      <p>
+        This concept is important because it shows that the final map is a modeled surface, not a direct photograph of the bottom. The map depends on where points were collected, how many points exist, and what interpolation rule is used.
+      </p>
+      <p>
+        It also makes sampling visible. If points are sparse, uneven, or clustered, the surface can miss or smooth out real bottom features. That makes interpolation a useful way to teach both computational methods and the limits of what a map can claim to show.
+      </p>
+    </section>
+
+    <footer>
+      OMEGA brings together acoustic sensing, environmental correction, measurement quality, geospatial positioning, and interpolation into one workflow that can be used to teach how underwater data becomes a map.
+    </footer>
+  </main>
+</body>
+</html>
