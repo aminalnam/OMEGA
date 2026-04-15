@@ -148,10 +148,11 @@ Mapping points are recorded only when the system detects:
 Run scripts on the mapping dataset:
 
 ```bash
-python depth_map.py MAP00.CSV
-python interpolated_map.py MAP00.CSV
-python contour_map.py MAP00.CSV
-python google_earth_overlay.py MAP00.CSV
+python csv_to_png_depth_points.py MAP00.CSV
+python csv_to_png_depth_interpolated.py MAP00.CSV
+python csv_to_png_depth_contours.py MAP00.CSV
+python csv_to_kml_points_colored.py MAP00.CSV
+python csv_to_kmz_depth_overlay.py MAP00.CSV
 ```
 
 ---
