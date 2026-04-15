@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How OMEGA Works</title>
+  <!--
+    Easiest use:
+    1. Save this file as /projects/omega/how-it-works/index.html
+    2. Add a link to /projects/omega/how-it-works/ from your OMEGA page or main navigation
+    3. If your site already has a shared header/footer, keep those and paste only the <main class="page">...</main> block into your site template
+  -->
   <style>
     :root {
       --bg: #f4f6f8;
@@ -35,7 +41,7 @@
       padding: 36px 0 72px;
     }
 
-    header, section, footer {
+    .page > header, .page > section, .page > footer {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 24px;
