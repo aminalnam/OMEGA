@@ -4,9 +4,9 @@
 
 OMEGA is a mobile bathymetric survey system designed to collect underwater depth measurements along a traveled path and reconstruct a mapped representation of submerged terrain from filtered spatial samples. It combines field sensing, real-time validation, structured logging, and post-processing into a single acquisition and mapping pipeline.
 
-The system is designed around a simple idea: not every field measurement is equally useful for mapping. Depth values must be interpreted in context, evaluated against position and motion quality, and filtered before they are used to reconstruct a surface. To support this, OMEGA preserves both the complete raw log of the survey and a reduced mapping dataset containing only higher-quality accepted points.
+Not every field measurement is equally useful for mapping. Depth values must be interpreted in context, evaluated against position and motion quality, and filtered before they are used to reconstruct a surface. OMEGA preserves both the complete raw log of the survey and a reduced mapping dataset containing only higher-quality accepted points.
 
-In practice, the platform operates in four stages:
+The platform operates in four stages:
 
 1. **Acquisition** — sensor data is collected continuously during movement
 2. **Validation** — each observation is checked against quality rules in real time
@@ -27,7 +27,7 @@ The purpose of the system is to produce a usable spatial survey record from a mo
 * preserve both raw and filtered data products
 * generate interpretable map outputs from accepted spatial samples
 
-OMEGA is best understood not as a single logger, but as a full measurement-to-map workflow.
+OMEGA is a full measurement-to-map workflow.
 
 ---
 
