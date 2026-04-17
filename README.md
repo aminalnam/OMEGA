@@ -48,12 +48,11 @@ docs/
   SCRIPTS.md
 
 scripts/
-  csv_to_kml.py
-  csv_to_kml_colored.py
-  depth_map.py
-  interpolated_map.py
-  contour_map.py
-  google_earth_overlay.py
+csv_to_png_depth_points.py 
+csv_to_png_depth_interpolated.py 
+csv_to_png_depth_contours.py
+csv_to_kml_points_colored.py 
+csv_to_kmz_depth_overlay.py
 
 example_data/
   MAP00.CSV
@@ -215,11 +214,11 @@ point,date_utc,time_utc,lat,lng,depth_cm,temp_c,satellites,hdop,speed_kmph,fix_a
 ## Example Workflow
 
 ```bash
-python depth_map.py example_data/MAP00.CSV
-python interpolated_map.py example_data/MAP00.CSV
-python contour_map.py example_data/MAP00.CSV
-python csv_to_kml_colored.py example_data/MAP00.CSV
-python google_earth_overlay.py example_data/MAP00.CSV
+python csv_to_png_depth_points.py MAP00.csv
+python csv_to_png_depth_interpolated.py MAP00.csv
+python csv_to_png_depth_contours.py MAP00.csv
+python csv_to_kml_points_colored.py MAP00.csv
+python csv_to_kmz_depth_overlay.py MAP00.csv
 ```
 ---
 
@@ -274,20 +273,6 @@ This architecture separates acquisition, validation, and surface reconstruction 
 * live telemetry and visualization
 
 ---
-
-## Testing
-
-A sample file is included:
-
-```
-example_data/MAP00.CSV
-```
-
-Run:
-
-```bash
-python depth_map.py example_data/MAP00.CSV
-```
 
 ## Documentation
 
